@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgb(230, 230, 230);
+	color: #677684;
+	font-size: 18px;
+	font-family: 'Lora', serif;
+}
+
+h1, h2, a{
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 20px;
+}
+
+h1{
+	color: #0A2540;
+	letter-spacing: 3px;
+	font-size: 32px;
+	font-weight: 300;
+}
+
+h2{
+	font-size: 22px;
+	color: #9966FF;
+	font-weight: 300;
+}
+
+a{
+	text-decoration: none;
+	font-weight: 900;
+	font-size: 16px;
+	color: #9b70f2;
+	transition: color .4s ease-in-out;
+}
+
+a:hover{
+	color: #0A2540;
+}
+
+.container{
+	width: 700px;
+	margin: 10px auto;
+}
+
+.card-white{
+	background-color: white;
+	padding: 40px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	margin:  20px 0px;
+	text-align: center;
+}
+
+.img-circle{
+	width: 25%;
+	height: 150px;
+	border-radius: 50%;
+	margin-top: 40px;
+}
+
+.img-border{
+	outline:  4px solid white;
+}
+
+.img-shadowed{
+	border:  1px solid white;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn-purple{
+	background-color: #9b70f2;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 4px;
+	transition: 1s;
+}
+
+.btn-purple:hover{
+	background-color: gray;
+	color:  white;
+	transition: 2s ease;
+}
+
+.list-inline{
+	list-style: none;
+	padding-left: 0px;
+}
+.list-inline li{
+	display: inline;
+	padding:  10px;
+
+}
+
+.list-inline i{
+	font-size: 40px;
+	color:  rgb(230, 230, 230);
+	transition: 1s ease;
+	margin: 0px 15px;
+}
+
+.list-inline i:hover{
+	color:  gray;
+	transition: 2s;
+}
+
+#introduction p{
+	margin: 40px 0px;
+}
+
+.card-white .title-icon{
+	display: flex;
+	font-size: 22px;
+	justify-content: center;
+	gap: 20px;
+}
+@media (max-width: 768px){
+	.container{
+		width: 500px;
+	}
+	.img-circle{
+
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 30px;
+	}
+}
+
+@media (max-width: 576px){
+	.container{
+		width: 300px;
+	}
+	.img-circle{
+		width: 45%;
+		height: 90px;
+		border-radius: 50%;
+		margin-top: 20px;
+	}
+	.list-inline i{
+		font-size: 30px;
+		margin: 0px 0px;
+	}
+	h1{
+	font-size: 30px;
+	}
+	h2{
+	font-size: 20px;
+	}
+	.card-white p{
+		font-size: 15px;
+	}
+	.card-white .title-icon{
+	display: inline-block;
+	font-size: 20px;
+	gap: 10px;
+	}
+}
+@media (max-width: 290px){
+	.container{
+		width: 250px;
+	}
+	.list-inline i{
+		font-size: 20px;
+	}
+	.btn-purple{
+	padding: 7px 15px;
+	}
+	a{
+	font-size: 10px;
+	}
+}
